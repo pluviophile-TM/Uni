@@ -1,0 +1,2 @@
+it takes an matrix (mat) from input and a integer k
+then counts the number of sub-matrix in mat wich the multiplys of it's  element is k
