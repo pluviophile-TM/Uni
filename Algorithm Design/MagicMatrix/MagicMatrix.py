@@ -19,11 +19,11 @@ def magic(mat,x,y,k):
 
     return res
 
-
+#take the height and width of matrix and k
 x,y,k=[int (x) for x in input().split()]
 mat=[]
+#take matrix from input
 for i in range(x):
     mat.append([int (x) for x in input().split()])
 
-
-print(magic(mat,3,4,12))                        
+print(magic(mat,x,y,k))                        
