@@ -1,3 +1,5 @@
+#BUG!!!!!!!!!!
+
 INF = 99999
 n=4 
 def floyd(n,d,p):
