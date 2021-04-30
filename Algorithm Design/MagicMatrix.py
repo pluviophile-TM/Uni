@@ -1,13 +1,9 @@
 
 def mat_multiply(mat,a,b,c,d):
     res=1
-    print("***********************")
     for i in range(a,b+1):
         for j in range(c,d+1):
-            res*=mat[i][j]
-            print(mat[i][j],end="")
-        print()   
-    print("mul=",res)     
+            res*=mat[i][j]  
     return res
 
 
@@ -18,17 +14,16 @@ def magic(mat,x,y,k):
             for y1 in range(0,y):
                 for y2 in range(y1,y):
                     if mat_multiply(mat,x1,x2,y1,y2)==k:
-                        print(x1,x2,y1,y2)
                         res+=1
+                        #if u wanna save them do it
 
     return res
 
 
-a = [
-    [1, 1, 2, 3],
-    [3, 2, 1, 1],
-    [2, 3, 2, 6]
-]
+x,y,k=[int (x) for x in input().split()]
+mat=[]
+for i in range(x):
+    mat.append([int (x) for x in input().split()])
 
 
-print(magic(a,3,4,12))                        
+print(magic(mat,3,4,12))                        
