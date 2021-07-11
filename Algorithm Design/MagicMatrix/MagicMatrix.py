@@ -13,6 +13,8 @@ def magic(mat,x,y,k):
         for x2 in range(x1,x):
             for y1 in range(0,y):
                 for y2 in range(y1,y):
+                    if (x2-x1)*(y2-y1)>6:
+                        continue
                     if mat_multiply(mat,x1,x2,y1,y2)==k:
                         res+=1
                         #if u wanna save them do it
